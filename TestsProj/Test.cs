@@ -1,32 +1,29 @@
 namespace TestsProj;
 using System.IO;
 using Xunit;
-using Xunit.Abstractions;
 
 public class UnitTest1
 {
-    private readonly ITestOutputHelper output;
-
-    public UnitTest1(ITestOutputHelper output)
-    {
-        this.output = output;
-    }
-
     [Fact]
     public void DoesMyFirstApiDirectoryExist()
     {
-        string path = @"../../../../MyFirstApi";
-        Assert.True(Directory.Exists(path), "The file directory \"MyFirstApi\" does not exist at the root of this GitHub repository");
-        output.WriteLine(Directory.GetCurrentDirectory());
+        string projectDirectoryPath = @"../../../../MyFirstLesson";
+        Assert.True(Directory.Exists(projectDirectoryPath), "The file directory \"MyFirstLesson\" does not exist at the root of this GitHub repository");
     }
 
     [Fact]
     public void DoesProgramFileInMyFirstApiExist()
     {
-        string curFile = @"../../../../MyFirstApi/Program.cs";
-        Assert.True(File.Exists(curFile), "The file \"Program.cs\" does not exist within the \"MyFirstApi\" directory at the root of this GitHub repository");
-        output.WriteLine(Directory.GetCurrentDirectory());
+        string programFilePath = @"../../../../MyFirstLesson/Program.cs";
+        Assert.True(File.Exists(programFilePath), "Program.cs does not exist within the \"MyFirstLesson\" directory at the root of this GitHub repository");
     }
 
-
+    [Fact]
+    public void DoesMyFirstLessonCsprojFileExistWithNETSDKTag()
+    {
+        string csprojFilePath = @"../../../../MyFirstLesson/MyFirstLesson.csproj";
+        Assert.True(File.Exists(csprojFilePath), "MyFirstLesson.csproj does not exist within the \"MyFirstLesson\" directory at the root of this GitHub repository");
+        string csprojContent = File.ReadAllText(csprojFilePath);
+        Assert.True(csprojContent.Contains("<Project Sdk=\"Microsoft.NET.Sdk.Web\">"), "MyFirstLesson.csproj does not contain the correct tags for a .NET \"webapi\" template project");
+    }
 }
