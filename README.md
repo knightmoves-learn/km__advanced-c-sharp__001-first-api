@@ -18,6 +18,7 @@ Additional Information:
 - The new .NET project will need to be located in the root of this GitHub Repository
     - If you are using codespaces, this will mean within the directory `/workspaces/km__advanced-c-sharp__001-first-api-$YOURGITHUBUSERNAME`
     - Otherwise, it will depend on where you have cloned this repo. It should be within the same directory as this `README.md` file.
+- You should NOT change any code within the `TestsProj` directory
 
 ## Resources
 - https://en.wikipedia.org/wiki/API
