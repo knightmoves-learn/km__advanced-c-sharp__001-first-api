@@ -4,10 +4,7 @@
 [![000 Intro](https://img.youtube.com/vi/BcW1ok5h7ng/0.jpg)](https://www.youtube.com/watch?v=BcW1ok5h7ng)
 
 ## Lecture Part 1
-[![001 First Api(Part 1)](https://img.youtube.com/vi/0npS3bRXyyQ/0.jpg)](https://www.youtube.com/watch?v=0npS3bRXyyQ)
-
-## Lecture Part 2
-[![001 First Api(Part 2)](https://img.youtube.com/vi/tyeqxx3y-No/0.jpg)](https://www.youtube.com/watch?v=tyeqxx3y-No)
+[![001 First Api](https://youtu.be/0CRZihwC5xk/0.jpg)](https://youtu.be/0CRZihwC5xk)
 
 
 ## Instructions
